@@ -4,15 +4,25 @@ networks:
     external: false
 
 services:
-  frontend-formulario:
-    container_name: frontend-formulario
-    image: frontend-formulario:latest
+  frontend:
+    container_name: frontend
+    image: frontend:latest
     build:
       context: ./frontend
-      # args:
-      #   - VITE_NODE_ENV=${VITE_NODE_ENV}
-      #   - VITE_API_URL=${VITE_API_URL}
+      args:
+        - VITE_API_URL=${VITE_API_URL}
     networks:
       - safeMedicine
     ports:
       - 4200:80
+  backend:
+    container_name: backend
+    image: backend:latest
+    build:
+      context: ./backend
+      args:
+        - OPENAI_TOKEN=${OPENAI_TOKEN}
+    networks:
+      - safeMedicine
+    ports:
+      - 8081:8081
