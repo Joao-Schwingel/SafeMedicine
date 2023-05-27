@@ -9,8 +9,8 @@ export default function DiagnosysPage() {
   const { sendConsult } = useContext(ConsultContext);
   return (
     <Layout
-      buttonClick={() => {
-        sendConsult().then(() => {
+      buttonClick={(evt) => {
+        sendConsult(evt.shiftKey).then(() => {
           history.push('/resposta');
         });
       }}

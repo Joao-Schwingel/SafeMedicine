@@ -3,6 +3,10 @@ const languageValues = {
     next: 'Próximo',
     confirm: 'Confirmar',
     send: 'Enviar',
+    start: 'Iniciar',
+  },
+  inputs: {
+    defPlaceholder: 'Digite aqui...',
   },
   hero: {
     title: 'Descubra o poder da inteligência artificial aplicada à saúde',
@@ -21,7 +25,7 @@ const languageValues = {
     cards: [
       {
         title: 'Carga de trabalho excessiva',
-        text: 'Os médicos frequentemente enfrentam situações emocionalmente desafiadoras, como lidar com pacientes gravemente doentes ou lidar com perdas. Esses fatores emocionais podem contribuir para o cansaço mental e emocional.',
+        text: 'Pelo fato das altas jornadas de plantões em hospitais e postos, turnos noturnos e falta de intervalos adequados podem levar à fadiga crônica e diminuição da capacidade de concentração.',
         icon: 'clock',
       },
       {
@@ -31,18 +35,22 @@ const languageValues = {
       },
       {
         title: 'Sobrecarga de informações',
-        text: 'Os médicos frequentemente enfrentam situações emocionalmente desafiadoras, como lidar com pacientes gravemente doentes ou lidar com perdas. Esses fatores emocionais podem contribuir para o cansaço mental e emocional.',
+        text: ' Os médicos precisam lidar com uma quantidade enorme de informações, como registros médicos, resultados de exames e literatura científica atualizada. O processamento constante dessas informações pode ser exaustivo e levar a erros.',
         icon: 'file',
       },
       {
         title: 'Carga de trabalho excessiva',
-        text: 'Os médicos frequentemente enfrentam situações emocionalmente desafiadoras, como lidar com pacientes gravemente doentes ou lidar com perdas. Esses fatores emocionais podem contribuir para o cansaço mental e emocional.',
+        text: 'Os médicos trabalham em ambientes de alta pressão, onde decisões rápidas e precisas são necessárias. O estresse constante pode aumentar a fadiga e afetar a tomada de decisões.',
         icon: 'face',
       },
     ],
   },
   landingPage: {
     title: 'Home',
+    footer: {
+      title: 'SafeMedicine',
+      text: 'Aplicação desenvolvida para auxiliar os profissionais da medicina a checarem seus diagnósicos antes de entregar aos pacientes.',
+    },
   },
   symptoms: {
     title: 'Sintomas',

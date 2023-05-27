@@ -5,6 +5,19 @@
   align-items: center;
   justify-content: center;
 
+  h1 {
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    max-width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .wrapper {
     margin-top: 30px;
     position: absolute;

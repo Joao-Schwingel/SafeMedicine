@@ -10,6 +10,10 @@
   background-color: #e2efec;
   gap: 12px;
 
+  textarea {
+    white-space: break-spaces;
+  }
+
   a {
     cursor: pointer;
   }

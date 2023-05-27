@@ -1,3 +1,4 @@
+import languageValues from '@/utils/language';
 import { Button } from '@mui/material';
 import { useHistory } from 'react-router-dom';
 import style from './footer.module.scss';
@@ -20,16 +21,19 @@ export default function Footer() {
         />
       </svg>
       <div className={style.wrapper}>
-        teste
-        <Button
-          variant='outlined'
-          color='secondary'
-          onClick={() => {
-            history.push('/sintomas');
-          }}
-        >
-          Iniciar
-        </Button>
+        <h1>{languageValues.landingPage.footer.title}</h1>
+        <p>{languageValues.landingPage.footer.text}</p>
+        <span>
+          <Button
+            variant='outlined'
+            color='secondary'
+            onClick={() => {
+              history.push('/sintomas');
+            }}
+          >
+            {languageValues.buttons.start}
+          </Button>
+        </span>
       </div>
     </div>
   );

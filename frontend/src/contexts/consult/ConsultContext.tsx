@@ -1,4 +1,4 @@
-import { postConsult } from '@/services/consult';
+import { mockConsult, postConsult } from '@/services/consult';
 import { createContext, Dispatch, ReactNode, useReducer } from 'react';
 import ConsultReducer, {
   ConsultActions,
@@ -9,7 +9,7 @@ import ConsultReducer, {
 interface IConsultContext {
   state: ConsultState;
   dispatch: Dispatch<ConsultActions>;
-  sendConsult: () => Promise<string>;
+  sendConsult: (mock?: boolean) => Promise<string>;
 }
 export const ConsultContext = createContext<IConsultContext>({
   dispatch: () => null,
@@ -27,16 +27,15 @@ export const ConsultContext = createContext<IConsultContext>({
 export default function ConsultProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(ConsultReducer, INITIAL_STATE);
 
-  const sendConsult = async () => {
+  const sendConsult = async (mock?: boolean) => {
     dispatch({
       type: 'setLoading',
       payload: true,
     });
     try {
-      const req = await postConsult(
-        state.values.symptoms,
-        state.values.diagnosys
-      );
+      const req = await (mock
+        ? mockConsult(state.values.symptoms, state.values.diagnosys)
+        : postConsult(state.values.symptoms, state.values.diagnosys));
       dispatch({
         type: 'setValues',
         payload: { response: req.data },
