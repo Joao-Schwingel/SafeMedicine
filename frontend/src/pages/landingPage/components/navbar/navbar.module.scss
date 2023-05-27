@@ -10,6 +10,21 @@
   padding: 0 15px;
   color: $white;
 
+  .center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    a {
+      text-decoration: none;
+      color: $white;
+
+      &:visited {
+        color: $white;
+      }
+    }
+  }
+
   .left {
     display: flex;
     align-items: center;

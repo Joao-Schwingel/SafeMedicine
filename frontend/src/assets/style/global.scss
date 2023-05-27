@@ -1,7 +1,12 @@
 @import './constants';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 #root {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   color: $black;

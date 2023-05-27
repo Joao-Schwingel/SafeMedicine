@@ -4,7 +4,7 @@ import languageValues from '@/utils/language';
 
 export default function About() {
   return (
-    <div className={style.root}>
+    <div className={style.root} id='quem-somos'>
       <img src={photo} alt='about' />
       <div className={style.wrapper}>
         <h1>{languageValues.about.title}</h1>

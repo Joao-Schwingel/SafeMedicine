@@ -23,7 +23,7 @@ export default function DiagnosticErrors() {
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
-        <h2>{languageValues.diagnosticErrors.title}</h2>
+        <h2 id='erros-diagnostico'>{languageValues.diagnosticErrors.title}</h2>
         <p className={style.subtitle}>
           {languageValues.diagnosticErrors.label}
         </p>
