@@ -12,7 +12,7 @@ const languageValues = {
   hero: {
     title: 'Descubra o poder da inteligência artificial aplicada à saúde',
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      'Com o avanço da tecnologia, descobrimos uma forma de auxiliar os profissionais da medicina a checarem seus diagnósticos antes de entregar aos pacientes.',
   },
   about: {
     title: 'Sobre nós',
