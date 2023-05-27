@@ -1,4 +1,4 @@
-import { ButtonWhite } from '../button/ButtonWhite';
+import { ButtonWhite } from '../button/buttonWhite';
 import styles from './Header.module.scss';
 
 export const Header = () => {
