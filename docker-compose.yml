@@ -1,0 +1,18 @@
+version: "3"
+networks:
+  safeMedicine:
+    external: false
+
+services:
+  frontend-formulario:
+    container_name: frontend-formulario
+    image: frontend-formulario:latest
+    build:
+      context: ./frontend
+      # args:
+      #   - VITE_NODE_ENV=${VITE_NODE_ENV}
+      #   - VITE_API_URL=${VITE_API_URL}
+    networks:
+      - safeMedicine
+    ports:
+      - 4200:80
