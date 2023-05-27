@@ -1,13 +1,19 @@
-import { Link } from 'react-router-dom';
-import { ButtonWhite } from '../button/buttonWhite';
+import { useHistory } from 'react-router-dom';
+import { ButtonGreen } from '../buttonGreen/buttonGreen';
 import styles from './Header.module.scss';
 
 export const Header = () => {
+  const history = useHistory();
   return (
-    <Link to='/' style={{ textDecoration: 'none'}}>
-      <div className={styles.header}>
-        <ButtonWhite label='Home' />
-      </div>
-    </Link>
+    <div className={styles.header}>
+      <ButtonGreen
+        onClick={() => {
+          history.push('/');
+        }} 
+        step=''
+      >
+        Home
+      </ButtonGreen>
+    </div>
   );
 };

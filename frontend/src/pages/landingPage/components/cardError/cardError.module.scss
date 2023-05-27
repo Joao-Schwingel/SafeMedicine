@@ -1,0 +1,21 @@
+.container {
+  width: 250px;
+  height: 350px;
+  background-color: #ffffff;
+  padding: 0 20px;
+  box-shadow: 0 10px #00000026;
+  border-radius: 10px;
+
+  .title {
+    font-size: larger;
+    min-height: 50px;
+    color: $blue;
+    margin: 20px 0;
+  }
+
+  .text {
+    color: #696969;
+    font-size: small;
+    text-align: justify;
+  }
+}

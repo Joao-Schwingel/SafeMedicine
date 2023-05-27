@@ -1,3 +1,5 @@
+@import '@/assets/style/constants';
+
 .button {
   width: 100%;
   height: 60px;
@@ -7,6 +9,6 @@
   border: #009c97;
   font-weight: 600;
   font-size: 18px;
-  font-family: 'Sora';
+  font-family: $main-font;
   cursor: pointer;
 }

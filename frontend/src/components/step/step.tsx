@@ -21,6 +21,9 @@ export const Step = ({ subtitle, step }: StepProps) => {
       <ButtonGreen
         step={step}
         label={step == 'final' ? 'Finalizar' : 'Continuar'}
+        onClick={() => {
+          console.log('teste');
+        }}
       />
     </div>
   );
