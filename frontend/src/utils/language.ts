@@ -4,6 +4,7 @@ const languageValues = {
     confirm: 'Confirmar',
     send: 'Enviar',
     start: 'Iniciar',
+    reset: 'Nova análise',
   },
   inputs: {
     defPlaceholder: 'Digite aqui...',

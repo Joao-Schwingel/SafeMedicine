@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ConsultProvider from './contexts/consult/ConsultContext';
 import DiagnosysPage from './pages/diagnosticPage/diagnosticPage';
 import LandingPage from './pages/landingPage/landingPage';
+import ResponsePage from './pages/responsePage/ResponsePage';
 import SymptomsPage from './pages/symptomsPage/symptomsPage';
 
 export default function Routes() {
@@ -12,8 +13,8 @@ export default function Routes() {
         <ConsultProvider>
           <Route path='/sintomas' exact component={SymptomsPage} />
           <Route path='/diagnostico' exact component={DiagnosysPage} />
+          <Route path='/resposta' component={ResponsePage} />
         </ConsultProvider>
-        {/* <Route path='/resposta'p component={FinalPage} /> */}
       </Switch>
     </BrowserRouter>
   );

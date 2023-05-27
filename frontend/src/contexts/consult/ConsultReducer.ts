@@ -17,7 +17,8 @@ export const INITIAL_STATE: ConsultState = {
 
 export type ConsultActions =
   | GenericAction<'setLoading', boolean>
-  | GenericAction<'setValues', Partial<IConsult>>;
+  | GenericAction<'setValues', Partial<IConsult>>
+  | GenericAction<'reset', undefined>;
 
 export default function ConsultReducer(
   state: ConsultState,
@@ -29,6 +30,8 @@ export default function ConsultReducer(
       return { ...state, loading: payload };
     case 'setValues':
       return { ...state, values: { ...state.values, ...payload } };
+    case 'reset':
+      return { ...INITIAL_STATE };
     default:
       return { ...state };
   }
