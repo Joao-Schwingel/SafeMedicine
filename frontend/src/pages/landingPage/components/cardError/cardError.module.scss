@@ -1,10 +1,14 @@
 .container {
   width: 250px;
-  height: 380px;
+  height: 390px;
   background-color: #ffffff;
-  padding: 0 20px;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 15%);
+  box-shadow: 0 0 10px #00000026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
 
   .imgcontainer {
     margin-top: 20px;

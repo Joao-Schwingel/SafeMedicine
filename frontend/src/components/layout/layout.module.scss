@@ -1,0 +1,16 @@
+@import '@/assets/style/constants';
+
+.root {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2efec;
+  gap: 12px;
+
+  a {
+    cursor: pointer;
+  }
+}

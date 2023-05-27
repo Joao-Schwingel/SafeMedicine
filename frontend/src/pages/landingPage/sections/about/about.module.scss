@@ -1,0 +1,32 @@
+@import '@/assets/style/constants';
+
+.root {
+  padding: 0 50px;
+  flex-flow: row wrap;
+  margin-bottom: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+
+  .wrapper {
+    max-width: 48%;
+
+    @media screen and (width < 679px) {
+      max-width: 90%;
+    }
+
+    p {
+      margin: auto;
+      color: $black-light;
+    }
+  }
+
+  img {
+    width: 40%;
+    max-width: 300px;
+    min-width: 250px;
+  }
+}

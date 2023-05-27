@@ -1,5 +1,5 @@
 export type IConsult = {
-  diagnostic: string;
+  diagnosys: string;
   symptoms: string;
   response: string;
 };

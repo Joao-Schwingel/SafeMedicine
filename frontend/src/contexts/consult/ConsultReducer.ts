@@ -9,7 +9,7 @@ export interface ConsultState {
 export const INITIAL_STATE: ConsultState = {
   loading: false,
   values: {
-    diagnostic: '',
+    diagnosys: '',
     symptoms: '',
     response: '',
   },

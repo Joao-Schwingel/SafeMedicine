@@ -1,10 +1,19 @@
 const languageValues = {
+  buttons: {
+    next: 'Próximo',
+    confirm: 'Confirmar',
+    send: 'Enviar',
+  },
   hero: {
     title: 'Descubra o poder da inteligência artificial aplicada à saúde',
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
   },
-  about: {},
+  about: {
+    title: 'Sobre nós',
+    label:
+      'Nós da SafeMedicine, temos como objetivo auxiliar os profissionais da medicina de forma totalmente anônima, dando a eles uma segunda opinião sobre o diagnóstico nos campos informados após clicar no botão comece agora.',
+  },
   diagnosticErrors: {
     title: 'Erros de Diagnóstico',
     label:
@@ -31,6 +40,17 @@ const languageValues = {
         icon: 'face',
       },
     ],
+  },
+  landingPage: {
+    title: 'Home',
+  },
+  symptoms: {
+    title: 'Sintomas',
+    label: 'Digite abaixo os sintomas do paciente...',
+  },
+  diagnosys: {
+    title: 'Diagnóstico',
+    label: 'Digite abaixo o diagnóstico...',
   },
 };
 

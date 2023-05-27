@@ -1,3 +1,4 @@
+import { postConsult } from '@/services/consult';
 import { createContext, Dispatch, ReactNode, useReducer } from 'react';
 import ConsultReducer, {
   ConsultActions,
@@ -15,7 +16,7 @@ export const ConsultContext = createContext<IConsultContext>({
   state: {
     loading: false,
     values: {
-      diagnostic: '',
+      diagnosys: '',
       symptoms: '',
       response: '',
     },
@@ -23,11 +24,30 @@ export const ConsultContext = createContext<IConsultContext>({
   sendConsult: Promise.reject,
 });
 
-export default function ContextProvider({ children }: { children: ReactNode }) {
+export default function ConsultProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(ConsultReducer, INITIAL_STATE);
 
   const sendConsult = async () => {
-    return 'verídico';
+    dispatch({
+      type: 'setLoading',
+      payload: true,
+    });
+    try {
+      const req = await postConsult(
+        state.values.symptoms,
+        state.values.diagnosys
+      );
+      dispatch({
+        type: 'setValues',
+        payload: { response: req.data },
+      });
+      return req.data;
+    } finally {
+      dispatch({
+        type: 'setLoading',
+        payload: false,
+      });
+    }
   };
 
   return (

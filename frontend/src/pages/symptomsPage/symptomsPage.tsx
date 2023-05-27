@@ -1,12 +1,21 @@
-import { Header } from '@/components/header/Header';
-import styles from './symptomsPage.module.scss';
-import { Step } from '@/components/step/step';
+import Layout from '@/components/layout/layout';
+import languageValues from '@/utils/language';
+import { useHistory } from 'react-router-dom';
 
-export const SymptomsPage = () => {
+export default function SymptomsPage() {
+  const history = useHistory();
   return (
-    <div className={styles.wrapper}>
-      <Header />
-      <Step step='sintomas' subtitle='Descreva os sintomas abaixo' />
-    </div>
+    <Layout
+      buttonClick={() => {
+        history.push('/diagnostico');
+      }}
+      buttonLabel={languageValues.buttons.next}
+      k='symptoms'
+      label={languageValues.symptoms.label}
+      breadcrumb={[
+        { label: languageValues.landingPage.title, link: '/' },
+        { label: languageValues.symptoms.title },
+      ]}
+    />
   );
-};
+}
