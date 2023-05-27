@@ -1,10 +1,12 @@
 import style from './landingPage.module.scss';
-import WaveHome from '@/assets/img/waveHome';
+import Wave from '@/assets/icons/wave';
+import Navbar from './components/navbar/navbar';
 
 export default function LandingPage() {
   return (
     <div className={style.container}>
-      <WaveHome />
+      <Wave />
+      <Navbar />
     </div>
   );
 }

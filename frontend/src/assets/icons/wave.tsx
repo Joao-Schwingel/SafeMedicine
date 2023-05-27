@@ -1,9 +1,9 @@
-export default function WaveHome() {
+export default function Wave() {
   return (
     <svg
       width='1460'
       height='746'
-      viewBox='0 0 1460 746'
+      viewBox='10 15 1440 726'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
