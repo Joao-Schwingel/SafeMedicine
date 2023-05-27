@@ -1,0 +1,13 @@
+@import './constants';
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: $main-font;
+}
+
+* {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+}
