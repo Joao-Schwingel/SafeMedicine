@@ -1,14 +1,13 @@
 import { Request, Response } from 'express';
-import { Configuration, OpenAIApi } from "openai";
+import { Configuration, OpenAIApi } from 'openai';
 import { OPENAI_TOKEN } from '../config/constants';
 
-
 class DiagnosticController {
-    public async index(req: Request, res: Response) {
-        const data = req.body;
-        const userQuestion = `${data.symptoms}, ${data.diagnosis}, o que acha?`
-        return await this.openAiRequest(userQuestion);
-    }
+  public async index(req: Request, res: Response) {
+    const data = req.body;
+    const userQuestion = `${data.symptoms}, ${data.diagnosis}, o que acha?`;
+    return await this.openAiRequest(userQuestion);
+  }
 
     private async openAiRequest(userQuestion) {
         const configuration = new Configuration({

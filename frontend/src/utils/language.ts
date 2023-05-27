@@ -17,7 +17,7 @@ const languageValues = {
   about: {
     title: 'Sobre nós',
     label:
-      'Nós da SafeMedicine, temos como objetivo auxiliar os profissionais da medicina de forma totalmente anônima, dando a eles uma segunda opinião sobre o diagnóstico nos campos informados após clicar no botão comece agora.',
+      'Nós da SafeMedicine, temos como objetivo auxiliar os profissionais da medicina de forma totalmente anônima, dando a eles uma segunda opinião sobre o diagnóstico nos campos informados após clicar no botão "INICIAR".',
   },
   diagnosticErrors: {
     title: 'Erros de Diagnóstico',

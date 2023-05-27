@@ -26,3 +26,13 @@ services:
       - safeMedicine
     ports:
       - 8081:8081
+  nginx:
+    container_name: nginx-med
+    image: nginx-med:latest
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    ports:
+      - 80:80
+    networks:
+      - safeMedicine
