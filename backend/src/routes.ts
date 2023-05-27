@@ -8,7 +8,7 @@ const validarBody = [
   body('symptoms').isString().withMessage('The symptoms must be a string'),
   body('diagnosis').isString().withMessage('The diagnosis must be a string')
 ];
-// User
+
 routes.post('/diagnostic', validarBody, async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -19,9 +19,11 @@ routes.post('/diagnostic', validarBody, async (req, res) => {
     console.log(answer)
     res.status(200).json({ message: answer })
   } catch(error) {
-    res.status(500).json({ error: "Internal server error "})
+    res.status(500).json({ error: error.message})
   }
   
 } );
+
+routes.post('/mock', DiagnosticController.mock);
 
 export default routes;

@@ -26,5 +26,9 @@ class DiagnosticController {
         });
         return completion.data.choices[0].message?.content
     }
+
+    public mock(req: Request, res: Response) {
+        return res.status(200).json({ message: "Com base nos sintomas descritos, a insuficiência cardíaca é uma possibilidade, mas é importante avaliar outros fatores também. A apneia pode estar contribuindo para a fadiga e dificuldade de exercício físico, e pode indicar um problema respiratório subjacente. Outras causas como doença pulmonar, anemia, hipotireoidismo, ou até mesmo uso de medicamentos devem ser consideradas. É necessário fazer um exame físico completo e solicitar exames complementares, como ecocardiograma, radiografia de tórax, exames de sangue, entre outros, para chegar a um diagnóstico definitivo." });
+    }
 } 
 export default new DiagnosticController();
