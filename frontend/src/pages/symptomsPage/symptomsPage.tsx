@@ -6,10 +6,7 @@ export const SymptomsPage = () => {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <Step
-        iconSrc='../../assets/icons/medical-record.png'
-        subtitle='Descreva os sintomas abaixo'
-      />
+      <Step step='sintomas' subtitle='Descreva os sintomas abaixo' />
     </div>
   );
 };
