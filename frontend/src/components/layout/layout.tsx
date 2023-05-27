@@ -64,7 +64,6 @@ export default function Layout(props: Props) {
           multiline
           placeholder={languageValues.inputs.defPlaceholder}
           rows={5}
-          maxRows={5}
           inputProps={{ maxLength: 500 }}
           value={values[props.k]}
           disabled={props.disabled}

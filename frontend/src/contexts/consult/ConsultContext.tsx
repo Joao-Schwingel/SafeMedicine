@@ -38,9 +38,9 @@ export default function ConsultProvider({ children }: { children: ReactNode }) {
         : postConsult(state.values.symptoms, state.values.diagnosys));
       dispatch({
         type: 'setValues',
-        payload: { response: req.data },
+        payload: { response: req.data.message ?? '' },
       });
-      return req.data;
+      return req.data.message;
     } finally {
       dispatch({
         type: 'setLoading',
