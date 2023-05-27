@@ -1,15 +1,19 @@
 .container {
   width: 250px;
-  height: 350px;
+  height: 380px;
   background-color: #ffffff;
   padding: 0 20px;
-  box-shadow: 0 10px #00000026;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 15%);
+
+  .imgcontainer {
+    margin-top: 20px;
+  }
 
   .title {
     font-size: larger;
     min-height: 50px;
-    color: $blue;
+    color: #009c97;
     margin: 20px 0;
   }
 

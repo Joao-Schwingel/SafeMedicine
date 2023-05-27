@@ -1,5 +1,9 @@
 const languageValues = {
-  hero: {},
+  hero: {
+    title: 'Descubra o poder da inteligência artificial aplicada à saúde',
+    subtitle:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+  },
   about: {},
   diagnosticErrors: {
     title: 'Erros de Diagnóstico',
