@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "overrides": [
+    {
+      "files": ["**/*.scss"]
+    }
+  ],
+  "rules": {
+    "color-hex-length": "long"
+  }
+}
