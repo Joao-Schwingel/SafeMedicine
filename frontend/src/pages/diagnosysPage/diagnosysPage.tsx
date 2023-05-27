@@ -1,12 +1,12 @@
 import { Header } from '@/components/header/Header';
-import styles from './symptomsPage.module.scss';
+import styles from './diagnosysPage.module.scss';
 import { Step } from '@/components/step/step';
 
-export const SymptomsPage = () => {
+export const DiagnosysPage = () => {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <Step step='sintomas' subtitle='Descreva os sintomas abaixo' />
+      <Step step='diagnostico' subtitle='Qual o diagnóstico encontrado' />
     </div>
   );
 };

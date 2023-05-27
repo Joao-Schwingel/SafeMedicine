@@ -1,12 +1,12 @@
 import { Header } from '@/components/header/Header';
-import styles from './symptomsPage.module.scss';
+import styles from './finalPage.module.scss';
 import { Step } from '@/components/step/step';
 
-export const SymptomsPage = () => {
+export const FinalPage = () => {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <Step step='sintomas' subtitle='Descreva os sintomas abaixo' />
+      <Step step='final' subtitle='Resultado encontrado' />
     </div>
   );
 };
